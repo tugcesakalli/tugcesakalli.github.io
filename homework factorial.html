@@ -1,0 +1,49 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>factorial(n)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            /*
+             * 
+             */
+            function addition(num1,num2) {
+                var res=1;
+                var (num1+num2=num3);  //the result we will return 
+                for(var i=2; i<=num1; i++);
+                for(var i=2;  i<=num2; i++);{ //loop up to num1+num2
+                     res = res + i; //res += i+;
+                    
+                   
+                }
+                return res
+            }
+            
+            // var  res6 addition(6);
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+               
+            <input type="text" id="num1" value="4"/>
+                 <input type="text" id="num2" value="4"/>
+                <input type="text" id="res" placeholder="Here goes the result" />
+                <input type="button" 
+                       onmouseover="calculate(num1,num2);" 
+                       onclick="calculate(num3);"
+                    />
+            </form>
+        </div>
+        <script>
+            function calculate() {
+                var innum = $('#num1,num2').val();
+                var res = addition(innum);
+                $('#res').val(res);
+            }            
+        </script>
+    </body>
+</html>
