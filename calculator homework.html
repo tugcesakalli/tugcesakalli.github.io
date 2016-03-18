@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Simple Calculator</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     <body>
+         <div>
+             <form>
+              <input type="text" id="input1">
+              <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+              <input type="text" id="input2">
+              <input type="button" id="calc" value="calc" onclick="calculate();">
+              <input type="text" id="output" disabled>
+              <br>
+            </form>
+            <div id="error">
+            </div>
+         </div>
+       
+ <script>
+      function calculate(){
+        var input1 = $('#input1').val();
+        var input2 = $('#input2').val();
+        var num1 = parseInt(input1);
+        var num2 = parseInt(input2);
+        if(isNaN(num1)&&isNaN(num2)) {
+        $("<p style='color:blue;'>do mistake</p>").appendTo('#error');
+        
+       }else {
+          var operator = $('#operator').val();
+          var res = eval(num1 + operator + num2);
+          $('#output').val(res);
+          console.log(eval(num1 + operator + num2));
+        } }
+         </script>
+     </body>
+ </html>
+        
