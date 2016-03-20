@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For Continued</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+         var timer;
+var elemID = "#disp";
+var id=0;
+$().ready(function() {
+    var right;
+    var left;
+    for(var i=0; i<1000; i++) {
+        left = Math.floor((Math.random() * 2000) + 1);
+        right = Math.floor((Math.random() * 3000) + 1);
+        $(elemID).append(   
+         "<div id='" + i + "' class='b' style='right:"
+         + right + "px; left:" + left + "px;'>" +
+         i + "</div>");
+    }
+    timer = setInterval(function() {
+        left = Math.floor((Math.random() * 2000) + 1);
+        right = Math.floor((Math.random() * 2000) + 1);        
+        $("#5").css("left",left+"px");
+        $("#5").css("right",right+"px");
+        $("#5").html(id++);
+    },2000);
+});
+                    </script>
+        <style>
+            .b {
+                position:relative; 
+                width:20px; 
+                height:20px; 
+                background-color:blueviolet;
+            }
+       </style>
+    </head>
+    <body>
+        <div id="disp">
+            
+        </div>
+    </body>
+</html>
