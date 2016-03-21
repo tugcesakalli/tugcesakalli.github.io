@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--
+<html>
+    <head>
+    <title> </title>
+</head>
+<body>
+    <h2>JSON object creation in javascript</h2>
+    <p id="demo"> </p>
+<script>
+
+    var object={"name":"tuğçe sakallı","street":"yaka mah.","05066965458","age":"23","height":"1.62"};
+    
+    
+
+ $() =('#demo')
+ 
+</script>
+
+</body>
+</html>
+<div>TODO write content</div>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>      
+    </head>
+<body>
+
+<h2>JSON Object Creation in JavaScript</h2>
+
+<p id="demo"> </p>
+
+<script>
+    var obj = {"name":"John","street":"Oslo West 16","phone":"555 1234567","heigt":180,"weight":80};
+   
+
+var s= obj.name+"<br>" +
+obj.street+"<br>" +
+obj.phone+"<br>"+
+obj.heigt+"<br>"+
+obj.weight+"<br>";
+calc(obj.heigt,obj.weight);
+
+$('#demo').append(s);
+  function calc (height,weight) {
+        var a=height;
+        var b = weight;
+        return a/b;
+    }
+</script>
+
+</body>
+</html>
